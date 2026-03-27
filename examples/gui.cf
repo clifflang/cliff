@@ -1,0 +1,21 @@
+import{gui/gui.py}
+
+void {SubmitAction}
+  typew{"Attempting to retrieve data..."}
+  # This pulls the text from the box named "user_box"
+  get_input{"user_box"}
+  typew{"Check your terminal for the result!"}
+end()
+
+void {Stuff}
+  window{}
+  title{"Cliff Secure Login"}
+  
+  label{"Please eter your Username:"}
+  # Create a text box linked to the name "user_box"
+  input{"user_box"}
+  
+  button{"Login Now", "SubmitAction"}
+  
+  launch{}
+end()
